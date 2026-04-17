@@ -1,3 +1,4 @@
+
 import streamlit as st
 import matplotlib.pyplot as plt
 
@@ -58,4 +59,3 @@ def draw_service_trunk(width, height, pipes):
 figure = draw_service_trunk(MODULE_WIDTH, MODULE_HEIGHT, pipes)
 st.pyplot(figure)
 ``
-
