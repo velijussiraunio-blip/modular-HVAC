@@ -85,8 +85,11 @@ def draw_trunk(width, height, pipes, tray_levels):
         plt.Rectangle((0, 0), width, height, fill=False, linewidth=2)
     )
 
-    for i in range(1, tiers):
-        ax.plot([0, width], [200 + i * tier_height], linestyle="--", linewidth=0.6)
+    
+for i in range(1, tiers):
+    y = 200 + i * tier_height
+    ax.plot([0, width], [y, y], linestyle="--", linewidth=0.6)
+
 
     for i in range(tray_levels):
         y = height - (i + 1) * 80
